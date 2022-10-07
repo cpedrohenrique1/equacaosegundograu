@@ -37,7 +37,7 @@ void Equacaosegundograu::setC(int aux)
 }
 
 bool Equacaosegundograu::delta(){
-    if ((b * b) - 4 * a * c < 0){
+    if (((b * b) - 4 * a * c) < 0){
         return false;
     }else{
         return true;
@@ -46,11 +46,11 @@ bool Equacaosegundograu::delta(){
 
 double Equacaosegundograu::calcularx1()
 {
-    return ((-b+(sqrt((b*b)-4*a*c)))/(2*a));
+    return ((-b+(sqrt((b * b) - 4 * a * c)))/(2*a));
 }
 double Equacaosegundograu::calcularx2()
 {
-    return ((-b-(sqrt((b*b)-4*a*c)))/(2*a));
+    return ((-b-(sqrt((b * b) - 4 * a * c)))/(2*a));
 }
 
 #endif

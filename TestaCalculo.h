@@ -48,7 +48,6 @@ void TestaCalculo::menu()
 
         cout << "x1 com soma eh: " << Objeto->calcularx1() << "\n";
         cout << "x2 com subtracao eh: " << Objeto->calcularx2() << "\n";
-
         cout << "Digite 0 para encerrar o programa: ";
         cin >> flag;
     } while (flag != 0);
