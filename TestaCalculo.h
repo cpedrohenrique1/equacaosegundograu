@@ -28,17 +28,23 @@ void TestaCalculo::menu()
     int entrada;
     do
     {
-        cout << "insira A: ";
-        cin >> entrada;
-        Objeto->setA(entrada);
+        do{
+            cout << "insira A: ";
+            cin >> entrada;
+            Objeto->setA(entrada);
 
-        cout << "insira B: ";
-        cin >> entrada;
-        Objeto->setB(entrada);
+            cout << "insira B: ";
+            cin >> entrada;
+            Objeto->setB(entrada);
 
-        cout << "insira C: ";
-        cin >> entrada;
-        Objeto->setC(entrada);
+            cout << "insira C: ";
+            cin >> entrada;
+            Objeto->setC(entrada);
+
+            if (Objeto->delta() == false){
+                cout << "Delta negativo, insira novamente\n";
+            }
+        }while(Objeto->delta() == false);
 
         cout << "x1 com soma eh: " << Objeto->calcularx1() << "\n";
         cout << "x2 com subtracao eh: " << Objeto->calcularx2() << "\n";

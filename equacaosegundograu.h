@@ -46,19 +46,11 @@ bool Equacaosegundograu::delta(){
 
 double Equacaosegundograu::calcularx1()
 {
-    if (delta() == true){
-        return ((-b + sqrt((b * b) - 4 * a * c)) / 2 * a);
-    }else{
-        return 0;
-    }
+    return ((-b+(sqrt((b*b)-4*a*c)))/(2*a));
 }
 double Equacaosegundograu::calcularx2()
 {
-    if(delta() == true){
-        return ((-b-sqrt((b*b) - 4*a*c))/2*a);
-    }else{
-        return 0;
-    }
+    return ((-b-(sqrt((b*b)-4*a*c)))/(2*a));
 }
 
 #endif
